@@ -1,5 +1,5 @@
 
-# MyPlugin Cordova Plugin
+# Cordova Plugin Template 'MyPlugin'
 
 ## Overview
 
