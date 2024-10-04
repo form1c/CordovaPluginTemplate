@@ -1,0 +1,30 @@
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-myplugin"
+        version="1.0.0">
+    <name>MyPlugin</name>
+    <description>A simple Cordova plugin example</description>
+    <license>MIT</license>
+    <keywords>cordova, plugin, template</keywords>
+
+    <engines>
+        <engine name="cordova" version=">=5.0.0"/>
+    </engines>
+
+    <asset src="www/MyPlugin.js" target="js/MyPlugin.js"/>
+
+    <js-module name="MyPlugin" src="www/MyPlugin.js">
+        <!-- Hint: Object in Javascript: MyPlugin.showToast(...) -->
+        <clobbers target="MyPlugin" />
+    </js-module>
+
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="MyPlugin">
+                <!-- Hint: java package name: "package com.example.plugin;" -->
+                <param name="android-package" value="com.example.plugin.MyPlugin"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/MyPlugin.java" target-dir="src/com/example/plugin/" />
+    </platform>
+
+</plugin>

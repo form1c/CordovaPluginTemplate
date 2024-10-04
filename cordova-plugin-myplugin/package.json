@@ -1,0 +1,25 @@
+{
+  "name": "cordova-plugin-myplugin",
+  "version": "1.0.0",
+  "description": "A simple Cordova plugin example",
+  "main": "index.js",
+  "author": "Your Name",
+  "license": "MIT",
+  "cordova": {
+    "id": "cordova-plugin-myplugin",
+    "platforms": [
+      "android"
+    ],
+    "engines": [
+      {
+        "name": "cordova",
+        "version": ">=5.0.0"
+      }
+    ]
+  },
+  "keywords": [
+    "cordova",
+    "plugin",
+    "template"
+  ]
+}
